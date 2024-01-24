@@ -1,0 +1,38 @@
+{
+  "name": "magevision/shopware6-customer-number-account",
+  "description": "Customer Number Account for Shopware 6",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MageVision",
+      "role": "Manufacturer"
+    }
+  ],
+  "type": "shopware-platform-plugin",
+  "autoload": {
+    "psr-4": {
+      "MageVision\\CustomerNumberAccount\\": "src/"
+    }
+  },
+  "require": {
+    "shopware/core": "~6.5.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "MageVision\\CustomerNumberAccount\\MageVisionCustomerNumberAccount",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "copyright": "(c) by MageVision",
+    "label": {
+      "en-GB": "MageVision Customer Number Account",
+      "de-DE": "MageVision Kundennummer im Kundenkonto anzeigen"
+    },
+    "description": {
+      "en-GB": "Display customer number in customer account",
+      "de-DE": "Kundennummer im Kundenkonto anzeigen"
+    },
+    "manufacturerLink": {
+      "en-GB": "https://www.magevision.com/",
+      "de-DE": "https://www.magevision.com/"
+    }
+  }
+}

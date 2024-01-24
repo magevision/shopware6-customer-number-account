@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/page/account/index.html.twig' %}
+{% block page_account_overview_welcome %}
+    {{ parent() }}
+    {% block page_account_overview_customer_number %}
+        <div class="account-overview-card account-overview-customer-number">
+            <div class="card">
+                <p class="card-body">
+                    {% block page_account_overview_customer_number_title %}
+                        <h2 class="card-title">
+                            {{ "account.customerNumberTitle"|trans|sw_sanitize }}
+                        </h2>
+                    {% endblock %}
+
+                    {% block page_account_overview_customer_number_content %}
+                        <p>
+                            {{ context.customer.customerNumber }}
+                        </p>
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}
